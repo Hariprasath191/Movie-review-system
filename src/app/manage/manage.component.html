@@ -1,0 +1,25 @@
+<app-header></app-header>
+
+<div class="page-container">
+  <button class="back-button" (click)="goBack()">← Back</button>
+
+  <div class="cards-container">
+    <div class="card" (click)="goToPopular()">
+      <h3>Popular</h3>
+      <img src="popular.jpeg" alt="Popular" />
+      <button class="enter-btn">Enter</button>
+    </div>
+
+    <div class="card" (click)="goToTrending()">
+      <h3>Trending</h3>
+      <img src="popular.jpg" alt="Trending" />
+      <button class="enter-btn">Enter</button>
+    </div>
+
+    <div class="card" (click)="goToTheatre()">
+      <h3>Theatre</h3>
+      <img src="theatre.jpg" alt="Theatre" />
+      <button class="enter-btn">Enter</button>
+    </div>
+  </div>
+</div>

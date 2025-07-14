@@ -1,0 +1,35 @@
+<app-header></app-header>
+<button class="back-button" (click)="backToManage()">← Back</button>
+<div class="manage-wrapper">
+  <h1>🎬 Movie Manager</h1>
+
+  <button class="add-btn" (click)="addMovie()">➕ Add New Movie</button>
+  <div class="movie-grid">
+    <div *ngFor="let m of movies" class="movie-card"> 
+      <div class="movie-info">
+        <img [src]="m.cover" alt="Movie Cover" />
+        <div>
+          <h2>{{ m.name }}</h2>
+          <p>⭐ Rating: {{ m.rating }}</p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="edit-btn" (click)="updateMovie(m)">✏️ Edit</button>
+        <button class="delete-btn" (click)="deleteMovie(m.id)">🗑️ Delete</button>
+      </div>
+
+      <div class="reviews">
+        <h4>Reviews</h4>
+        <ul *ngIf="m.reviews.length > 0">
+          <li *ngFor="let r of m.reviews; let i = index">
+            <strong>{{ r.author }}</strong> ({{ r.rating }}⭐): {{ r.review }}
+            <button class="delete-btn small" (click)="deleteReview(m, i)">❌</button>
+          </li>
+        </ul>
+        <p *ngIf="m.reviews.length === 0" class="no-reviews">No reviews yet.</p>
+        <button class="add-review-btn" (click)="addReview(m)">➕ Add Review</button>
+      </div>
+    </div>
+  </div>
+</div>

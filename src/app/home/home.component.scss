@@ -1,0 +1,152 @@
+.back-button {
+  background: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #007bff;
+    color: #fff;
+  }
+}
+
+/* ✅ Border box for safe sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.home-container {
+  display: flex;
+  width: 100%;
+
+  .all-movies {
+    width: 75%;
+    min-height: calc(100vh - 80px);
+    border-right: 1px solid #fdc827;
+    padding: 20px 40px;
+
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+
+      h4 {
+        text-transform: uppercase;
+        font-weight: bold;
+        border-left: 5px solid #ff9900;
+        padding-left: 10px;
+      }
+
+      .view-all {
+        color: #ff9900;
+        cursor: pointer;
+        font-weight: bold;
+      }
+    }
+
+    .movies-thumbnail {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 30px;
+
+      .movie {
+        flex: 0 0 auto;
+
+        .cover {
+          cursor: pointer;
+
+          img {
+            display: block;
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+          }
+        }
+
+        .detail {
+          width: 180px;
+
+          .name {
+            font-weight: bold;
+            height: 50px;
+            margin-top: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .popular-movies {
+    width: 25%;
+    min-height: calc(100vh - 80px);
+    padding: 20px 40px;
+
+    h4 {
+      text-transform: uppercase;
+      font-weight: bold;
+      border-left: 5px solid #ff9900;
+      padding-left: 10px;
+    }
+
+    .movies {
+      .movie {
+        margin: 30px 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .name {
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+
+      .view-all {
+        color: #ff9900;
+        text-align: right;
+        margin-top: 30px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.rating {
+  position: relative;
+  padding-right: 45px;
+
+  .rating-value {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-weight: bold;
+  }
+}
+.manage{
+    background: #007bff;
+    color: #fff;
+    margin: 20px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: #0056b3;
+    }
+  }
