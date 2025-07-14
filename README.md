@@ -2,6 +2,10 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
 
+# MovieApp
+
+This project was deployed in netlify and the link to access this project is https://6874ad6b684f29243f312cb7--movierreview.netlify.app/
+
 ## Development server
 
 To start a local development server, run:
@@ -22,11 +26,9 @@ json-server --watch db.json --port 3000
 
 Once the json server is running, open your browser and navigate to `http://localhost:3000/`.
 Endpoints:
-    http://localhost:3000/popular
-    http://localhost:3000/theatre
-    http://localhost:3000/trending
-
-
+http://localhost:3000/popular
+http://localhost:3000/theatre
+http://localhost:3000/trending
 
 ## Code scaffolding
 
