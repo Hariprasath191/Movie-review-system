@@ -12,6 +12,22 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
+## JSON server
+
+To start a local development server, run:
+
+```bash
+json-server --watch db.json --port 3000
+```
+
+Once the json server is running, open your browser and navigate to `http://localhost:3000/`.
+Endpoints:
+    http://localhost:3000/popular
+    http://localhost:3000/theatre
+    http://localhost:3000/trending
+
+
+
 ## Code scaffolding
 
 Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
