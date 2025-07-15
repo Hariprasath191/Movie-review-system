@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class ManageComponent {
   movies: any[] = [];
-  baseUrl = 'http://localhost:3000/popular';
+  baseUrl = 'https://movie-review-system-p1tz.onrender.com/';
 
   constructor(private router:Router) {}
 

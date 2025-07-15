@@ -19,7 +19,7 @@ export class ManagexComponent {
 
    ngOnInit(): void{
     this.type = this.route.snapshot.params['type'];
-    this.baseUrl = 'http://localhost:3000/'.concat(this.type);
+    this.baseUrl = 'https://movie-review-system-p1tz.onrender.com/'.concat(this.type);
     this.loadMovies();
    }
   movies: any[] = [];
