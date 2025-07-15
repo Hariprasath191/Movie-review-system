@@ -4,6 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "json-server": "json-server --watch db.json --port 3000",
+    "dev": "concurrently \"npm run json-server\" \"npm start\"",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -20,6 +22,7 @@
     "@ng-bootstrap/ng-bootstrap": "^18.0.0",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.7",
+    "concurrently": "^9.2.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
